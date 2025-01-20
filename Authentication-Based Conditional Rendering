@@ -1,0 +1,22 @@
+
+    
+    @guest <!-- Show this link for guests only -->
+        <a href="{{ route('login') }}" class="btn btn-dark">
+            Login
+        </a>
+    @endguest
+
+    
+    @auth <!-- Show this link for authenticated users only -->
+        <a href="{{ route('logout') }}" 
+           class="btn btn-danger" 
+           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            Logout
+        </a>
+
+        <!-- Hidden logout form -->
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+    @endauth
+
