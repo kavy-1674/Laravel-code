@@ -1,0 +1,13 @@
+# Laravel `.env` File – Interview Notes
+
+---
+
+## **1. What is `.env` file in Laravel?**
+
+- In Laravel project, **`.env` file** is a *configuration file*.
+- It stores *environment-specific variables* like:
+  - *Database credentials*
+  - *API keys*
+  - *Application settings*
+- It is *crucial* for maintaining *security* and *flexibility*  
+  by keeping *sensitive information* **separate from the codebase**.
